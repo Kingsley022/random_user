@@ -1,0 +1,97 @@
+
+*{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+  text-align: center;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  margin: .5rem 0;
+  padding: .3rem;
+  border: none;
+}
+th{
+  color: gray;
+  padding: 1rem .3rem;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  border-radius: 5px;
+}
+tr{
+  cursor: pointer;
+}
+tr:first-child{
+  cursor: auto;
+}
+.img-n-name{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.img-n-name > img{
+  border-radius: 50px;
+}
+
+.pagination-container{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 4rem;
+}
+.pagination-container a{
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  color: var(--green);
+  border: 1px solid ;
+  cursor: pointer;
+  transition: .5s all;
+}
+.pagination-container a:hover{
+  background: gray;
+  color: #dddddd;
+  border-color: transparent;
+}
+
+.activePageBtn a{
+  background: gray;
+  border-color: transparent;
+}
+.news-conatainer .news:hover{
+  color: gray;
+  cursor: pointer;
+}
+
+
+/* User Details begin */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.user-container{
+  background: #e6d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius: 12px;
+}
+.user-container > img{
+  height: 220px;
+  width: 220px;
+  border-radius: 100%;
+}
